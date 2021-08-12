@@ -1,0 +1,3 @@
+%{~ for user_agent in user_agents ~}
+ (http.user_agent contains "${user_agent}") or
+%{~ endfor ~}

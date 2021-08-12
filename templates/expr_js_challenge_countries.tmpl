@@ -1,0 +1,3 @@
+%{~ for c in country_codes ~}
+ (ip.geoip.country eq "${c}") or
+%{~ endfor ~}
